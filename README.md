@@ -82,6 +82,8 @@ Las funciones básicas en JavaScript son bloques de código reutilizables que re
 # Funciones de flecha
 Las funciones de flecha, o arrow functions en inglés, son una forma más concisa de definir funciones en JavaScript introducida en ECMAScript 6. Se definen utilizando la sintaxis () => {} y son anónimas por defecto. Las funciones de flecha no tienen su propio valor this y heredan automáticamente el contexto de su entorno. Son especialmente útiles para escribir código más legible y compacto, especialmente cuando se trabaja con funciones de orden superior o se necesitan funciones cortas y simples.
 
+las funciones de flecha (=>) son una forma concisa de escribir funciones y se utilizan principalmente para crear funciones anónimas o para simplificar la sintaxis de las funciones. La sintaxis de las funciones de flecha proporciona una manera más compacta de definir funciones en comparación con la sintaxis de funciones tradicionales, y su uso es común en JavaScript para escribir código más conciso y legible.
+
 # Retorno de las funciones
 El retorno de las funciones en JavaScript se refiere al valor devuelto por una función después de que se ha ejecutado. Puede haber declaraciones de retorno explícitas utilizando la palabra clave return, que especifican el valor que se debe devolver. Si no se especifica ningún valor de retorno o no se utiliza la palabra clave return, la función devuelve automáticamente el valor undefined. El retorno de las funciones es útil para obtener resultados calculados, realizar operaciones condicionales o pasar valores a otras partes del código.
 
@@ -144,3 +146,85 @@ default
 from
 
 Esta lista incluye algunas de las palabras reservadas más comunes en JavaScript, pero hay más palabras reservadas en el lenguaje. Es importante recordar que no se pueden utilizar estas palabras como identificadores (nombres de variables, funciones, objetos, etc.) en el código, ya que tienen un significado especial y están reservadas para su uso específico en el lenguaje.
+
+# Ciclos y estructuras de control
+1. Estructuras de control de flujo: Son mecanismos que nos permiten controlar el flujo de ejecución de un programa. Podemos tomar decisiones o repetir ciertas instrucciones según ciertas condiciones. Las estructuras de control más comunes son: `if` y `else`, `switch`, `while`, `do while` y `for`.
+
+2. Paso de variables por valor y por referencia: Al pasar una variable por valor, se copia el valor actual de la variable en otra variable o función, creando una copia independiente. Al pasar una variable por referencia, se pasa la referencia o dirección de memoria de la variable, lo que significa que ambos apuntan al mismo valor en la memoria.
+
+3. Romper referencia de objetos: Se refiere a eliminar la conexión entre dos variables que apuntan al mismo objeto. Esto se puede lograr asignando un nuevo valor a una de las variables o utilizando métodos como `Object.assign()` o el operador de propagación (`...`).
+
+4. `if` y `else`: Permite ejecutar un bloque de código si una condición es verdadera (`if`) y otro bloque de código si la condición es falsa (`else`). La sintaxis es:
+
+```javascript
+if (condicion) {
+  // código a ejecutar si la condición es verdadera
+} else {
+  // código a ejecutar si la condición es falsa
+}
+```
+
+5. Lógica booleana: Es el área de la programación que involucra expresiones y operaciones basadas en valores booleanos (`true` o `false`). Se utilizan operadores lógicos como `&&` (AND), `||` (OR) y `!` (NOT) para combinar y evaluar estas expresiones.
+
+6. Operadores y operadores de asignación: Los operadores se utilizan para realizar operaciones matemáticas o comparaciones entre valores. Algunos ejemplos son `+` (suma), `-` (resta), `*` (multiplicación), `/` (división), `===` (igualdad estricta). Los operadores de asignación (`=`, `+=`, `-=`, etc.) se utilizan para asignar valores a variables.
+
+7. Operador condicional ternario: Es una forma abreviada de escribir una declaración `if`/`else` en una sola línea. La sintaxis es: `condicion ? valorSiVerdadero : valorSiFalso`. Por ejemplo: `let resultado = edad >= 18 ? "Mayor de edad" : "Menor de edad";`.
+
+8. Diferentes usos del operador condicional ternario: Puede usarse para asignar un valor condicionalmente, mostrar un mensaje basado en una condición o filtrar elementos en un arreglo, entre otros casos.
+
+9. `switch`: Permite evaluar una expresión y ejecutar diferentes bloques de código según el valor de esa expresión. La sintaxis es:
+
+```javascript
+switch (expresion) {
+  case valor1:
+    // código a ejecutar si expresion es igual a valor1
+    break;
+  case valor2:
+    // código a ejecutar si expresion es igual a valor2
+    break;
+  default:
+    // código a ejecutar si ninguno de los casos anteriores se cumple
+}
+```
+
+10. `while`: Per
+
+mite ejecutar un bloque de código mientras una condición sea verdadera. La sintaxis es:
+
+```javascript
+while (condicion) {
+  // código a ejecutar mientras la condición sea verdadera
+}
+```
+
+11. `do while`: Similar a `while`, pero primero ejecuta el bloque de código y luego verifica la condición. Garantiza que el bloque de código se ejecute al menos una vez. La sintaxis es:
+
+```javascript
+do {
+  // código a ejecutar
+} while (condicion);
+```
+
+12. `for`: Permite repetir un bloque de código un número determinado de veces. La sintaxis es:
+
+```javascript
+for (inicio; condicion; incremento) {
+  // código a ejecutar en cada iteración
+}
+```
+
+- `for in`: Se utiliza para iterar sobre las propiedades enumerables de un objeto. La sintaxis es:
+
+```javascript
+for (variable in objeto) {
+  // código a ejecutar en cada iteración
+}
+```
+
+- `for of`: Se utiliza para iterar sobre elementos iterables como arreglos o cadenas de texto. La sintaxis es:
+
+```javascript
+for (variable of iterable) {
+  // código a ejecutar en cada iteración
+}
+```
