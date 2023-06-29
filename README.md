@@ -99,51 +99,51 @@ El retorno de las funciones en JavaScript se refiere al valor devuelto por una f
 
 - Snake Case: Es una convención de escritura en la cual las palabras se separan utilizando guiones bajos (_). Todas las letras suelen ser minúsculas. Se utiliza para nombrar variables, funciones o archivos en los que se desea tener una separación clara entre las palabras y facilitar la legibilidad.
 
-# Palabras reservadas para control de flujo y estructuras de control
-if
-else
-for
-while
-do
-switch
-case
-break
-continue
-default
-return
+### Palabras reservadas para control de flujo y estructuras de control
+if,
+else,
+for,
+while,
+do,
+switch,
+case,
+break,
+continue,
+default,
+return.
 
-# Palabras reservadas para declaración de variables y funciones
-var
-let
-const
-function
-class
-this
-super
-new
-typeof
-instanceof
+### Palabras reservadas para declaración de variables y funciones
+var,
+let,
+const,
+function,
+class,
+this,
+super,
+new,
+typeof,
+instanceof.
 
-# Palabras reservadas para manipulación de objetos y propiedades
-object
-prototype
-delete
-in
-get
-set
-extends
+### Palabras reservadas para manipulación de objetos y propiedades
+object,
+prototype,
+delete,
+in,
+get,
+set,
+extends.
 
-# Palabras reservadas para manejo de excepciones
-try
-catch
-finally
-throw
+### Palabras reservadas para manejo de excepciones
+try,
+catch,
+finally,
+throw.
 
-# Palabras reservadas para manejo de módulos y exportación/importación
-import
-export
-default
-from
+### Palabras reservadas para manejo de módulos y exportación/importación
+import,
+export,
+default,
+from.
 
 Esta lista incluye algunas de las palabras reservadas más comunes en JavaScript, pero hay más palabras reservadas en el lenguaje. Es importante recordar que no se pueden utilizar estas palabras como identificadores (nombres de variables, funciones, objetos, etc.) en el código, ya que tienen un significado especial y están reservadas para su uso específico en el lenguaje.
 
