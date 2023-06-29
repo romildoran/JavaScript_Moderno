@@ -45,3 +45,6 @@ instanceof
 continue
 switch
 enumerables
+Document
+Model
+callbacks

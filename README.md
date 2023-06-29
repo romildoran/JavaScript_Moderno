@@ -228,3 +228,16 @@ for (variable of iterable) {
   // código a ejecutar en cada iteración
 }
 ```
+## Laboratorio:
+<hr>
+1. Trabajar con arreglos: Los arreglos son estructuras de datos que nos permiten almacenar y manipular múltiples valores en JavaScript. Podemos acceder a los elementos del arreglo utilizando índices y realizar operaciones como agregar, eliminar, modificar y recorrer los elementos.
+
+2. Mezclar los valores de los arreglos: Mezclar los valores de los arreglos significa combinar o intercalar los elementos de dos o más arreglos en uno solo. Esto se puede lograr utilizando diferentes métodos, como el uso de bucles y funciones como `concat` o `spread operator`, para crear un nuevo arreglo que contenga los elementos mezclados de los arreglos originales.
+
+3. Introducción a la manipulación del DOM: El DOM (Document Object Model) es una representación estructurada y jerárquica de un documento HTML. Manipular el DOM significa interactuar con los elementos HTML y realizar cambios en su contenido, estilos y comportamiento utilizando JavaScript. Podemos seleccionar elementos, modificar atributos, añadir o eliminar elementos, y responder a eventos del usuario.
+
+4. Eventos: Los eventos son acciones que ocurren en una página web, como hacer clic en un botón, desplazarse por el documento o cargar la página. En JavaScript, podemos capturar y responder a estos eventos mediante la asignación de funciones o callbacks a los elementos HTML. Esto nos permite ejecutar código específico cuando un evento ocurre, como mostrar un mensaje, realizar una acción o actualizar el contenido de la página.
+
+5. Crear imágenes en la página: Podemos crear imágenes en una página web utilizando la etiqueta `<img>` en HTML y asignar la ruta de la imagen al atributo `src`. También es posible crear imágenes dinámicamente utilizando JavaScript, creando elementos `<img>` en el DOM y configurando sus atributos, como el origen de la imagen y el texto alternativo.
+
+6. Realizar la lógica para implementar un competidor de cartas: Implementar un competidor de cartas implica desarrollar la lógica del juego utilizando JavaScript. Esto implica la creación de las reglas del juego, la representación de las cartas, la asignación de valores y la comparación entre ellas, y el manejo de los eventos del usuario, como hacer clic en una carta o realizar movimientos. La implementación puede involucrar el uso de estructuras de datos, algoritmos y manipulación del DOM para mostrar las cartas y actualizar el estado del juego.
