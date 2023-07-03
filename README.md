@@ -293,4 +293,4 @@ Es una biblioteca de utilidades de JavaScript que proporciona una serie de funci
 
 La biblioteca Underscore.js ha sido minificada (optimizada para reducir su tamaño) en el archivo underscore-min.js, lo que significa que se ha eliminado cualquier espaciado o comentarios innecesarios para que ocupe menos espacio y pueda ser cargada y ejecutada de manera más eficiente en un entorno de producción.
 
-- Enlace a Javascript-minifier.com: <a href="https://www.toptal.com/developers/javascript-minifier"></a>
+- <a href="https://www.toptal.com/developers/javascript-minifier">Enlace a Javascript-minifier.com: </a>
