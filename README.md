@@ -241,3 +241,56 @@ for (variable of iterable) {
 5. Crear imágenes en la página: Podemos crear imágenes en una página web utilizando la etiqueta `<img>` en HTML y asignar la ruta de la imagen al atributo `src`. También es posible crear imágenes dinámicamente utilizando JavaScript, creando elementos `<img>` en el DOM y configurando sus atributos, como el origen de la imagen y el texto alternativo.
 
 6. Realizar la lógica para implementar un competidor de cartas: Implementar un competidor de cartas implica desarrollar la lógica del juego utilizando JavaScript. Esto implica la creación de las reglas del juego, la representación de las cartas, la asignación de valores y la comparación entre ellas, y el manejo de los eventos del usuario, como hacer clic en una carta o realizar movimientos. La implementación puede involucrar el uso de estructuras de datos, algoritmos y manipulación del DOM para mostrar las cartas y actualizar el estado del juego.
+
+<a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/">Enlace de la pagina oficial de Bootstrap.
+</a>
+<a href="https://underscorejs.org/">enlace de la pagina oficial de Underscore.js.
+</a>
+
+## Patrón módulo:
+El patrón módulo es una técnica de diseño en JavaScript que nos permite organizar nuestro código en módulos separados. Cada módulo encapsula su propia lógica y datos, evitando la contaminación del espacio global y permitiendo una estructura más modular y mantenible. Podemos utilizar técnicas como el uso de closures y objetos literales para implementar el patrón módulo.
+
+### "IIFE" (Immediately Invoked Function Expression)
+Que en español se traduce como "Expresión de Función Invocada Inmediatamente". Es una técnica de JavaScript que se utiliza para encapsular el código en una función anónima y ejecutarla inmediatamente después de su definición.
+
+Al envolver el código en una IIFE, se crea un ámbito o scope local que protege las variables y funciones definidas dentro de la IIFE, evitando que se mezclen con el ámbito global y evitando conflictos con otras partes del código. Esto ayuda a prevenir colisiones de nombres de variables y funciones, y brinda una capa adicional de seguridad y protección del código.
+
+La estructura básica de una IIFE es la siguiente:
+ <script src="">
+(function() {
+  // Código a encapsular
+})();
+</script>
+
+Al utilizar esta técnica, el código dentro de la IIFE se ejecutará una sola vez y se mantendrá protegido dentro de su ámbito local. Además, también se pueden pasar parámetros a la IIFE para hacerla más flexible y modular.
+
+## Las funciones del "use Strict" dentro de una función anónima
+La declaración "use strict" dentro de una función anónima tiene las siguientes funciones:
+
+1. Habilitar el modo estricto: Al incluir la declaración "use Strict", se habilita el modo estricto en el contexto de la función. El modo estricto impone reglas más estrictas y evita ciertos comportamientos ambiguos o propensos a errores en JavaScript. Ayuda a detectar y evitar errores comunes, mejora la legibilidad del código y promueve buenas prácticas de programación.
+
+2. Prevenir el uso de variables no declaradas: En el modo estricto, no se permite el uso de variables no declaradas. Si intentas utilizar una variable sin haberla declarado previamente con var, let o const, se generará un error. Esto ayuda a evitar errores debido a errores tipográficos en el nombre de las variables y fomenta el uso correcto de las declaraciones de variables.
+
+3. Eliminar comportamientos ambiguos y obsoletos: El modo estricto deshabilita ciertos comportamientos ambiguos y obsoletos de JavaScript. Por ejemplo, impide el uso de palabras clave reservadas como nombres de variables, evita la asignación a variables de solo lectura y no permite eliminar variables o funciones. Esto ayuda a escribir un código más claro y predecible, evitando problemas que podrían surgir en versiones antiguas o diferentes implementaciones de JavaScript.
+
+## Minimizar el código de forma manual:
+La minimización del código consiste en reducir el tamaño del archivo JavaScript eliminando espacios en blanco, comentarios y renombrando variables de forma que ocupen menos espacio. Esto se hace manualmente utilizando herramientas o técnicas como eliminar comentarios innecesarios, utilizar nombres de variables más cortos y eliminar espacios en blanco. La minimización del código ayuda a mejorar el rendimiento y reducir el tiempo de carga de una página web.
+
+### la desestructuracion de arreglos en js
+
+La desestructuración de arreglos en JavaScript es una característica que permite extraer valores de un arreglo y asignarlos a variables individuales de forma rápida y sencilla. En lugar de acceder a los elementos del arreglo uno por uno utilizando índices, la desestructuración permite asignar esos elementos a variables en una sola declaración.
+La sintaxis básica de la desestructuración de arreglos es la siguiente:
+<script>const [variable1, variable2, ...] = arreglo; </script>
+
+## Optimizaciones y protección de código:
+Las optimizaciones en JavaScript buscan mejorar el rendimiento y la eficiencia del código, como la optimización del rendimiento de bucles, el uso de algoritmos más eficientes y la reducción de operaciones innecesarias. También se pueden aplicar técnicas de compresión y ofuscación del código para protegerlo de ser leído o comprendido por terceros. Estas técnicas pueden incluir el uso de herramientas automatizadas o la aplicación de prácticas de codificación más eficientes.
+
+ ## Módulo:
+ En JavaScript. El patrón de módulo se utiliza para crear un encapsulamiento y control de la visibilidad de las variables y funciones dentro de un módulo, donde solo se exponen públicamente aquellas que se retornan explícitamente a través de la declaración return.
+
+## Underscore-min 
+Es una biblioteca de utilidades de JavaScript que proporciona una serie de funciones y métodos útiles para trabajar con datos y estructuras de programación. Su finalidad principal es facilitar el manejo de tareas comunes y complejas en JavaScript, ofreciendo métodos para manipular objetos, arrays, funciones, realizar operaciones matemáticas, entre otros.
+
+La biblioteca Underscore.js ha sido minificada (optimizada para reducir su tamaño) en el archivo underscore-min.js, lo que significa que se ha eliminado cualquier espaciado o comentarios innecesarios para que ocupe menos espacio y pueda ser cargada y ejecutada de manera más eficiente en un entorno de producción.
+
+- Enlace a Javascript-minifier.com: <a href="https://www.toptal.com/developers/javascript-minifier"></a>
