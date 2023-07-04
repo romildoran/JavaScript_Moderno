@@ -3,6 +3,12 @@
 class PersonaNatural {
     //estas son las propiedades:
     //todas las propiedades en JS tienen el 'use strict' ya implementado
+
+    static _conteo = 0; //popiedad estatica.
+    static get conteo(){
+        return PersonaNatural._conteo + ' Instancias';
+    }
+    
     nombre = '';
     codigo = '';
     frase = '';
@@ -16,6 +22,8 @@ class PersonaNatural {
         this.nombre = nombre;
         this.codigo = codigo;
         this.frase = frase;
+
+        PersonaNatural._conteo++; 
 
     }
 
@@ -51,7 +59,12 @@ const ironman = new PersonaNatural('Tony Stark', 'Ironman', 'Yo soy Ironman');
 spiderman.miFrase();
 //lamando al set
 spiderman.setComidaFavorita = 'El pie de cereza de la tía May';
-spiderman.nemesis = 'Duende Verde';
+//spiderman.nemesis = 'Duende Verde';
 
-console.log(spiderman.getComidaFavorita);
-console.log(spiderman);
+//console.log(spiderman.getComidaFavorita);
+
+//console.log(spiderman);
+
+// PersonaNatural._conteo = 2;
+console.log('Conteo estático', PersonaNatural._conteo);
+console.log(PersonaNatural.conteo); 
