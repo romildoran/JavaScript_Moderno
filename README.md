@@ -294,3 +294,50 @@ Es una biblioteca de utilidades de JavaScript que proporciona una serie de funci
 La biblioteca Underscore.js ha sido minificada (optimizada para reducir su tamaño) en el archivo underscore-min.js, lo que significa que se ha eliminado cualquier espaciado o comentarios innecesarios para que ocupe menos espacio y pueda ser cargada y ejecutada de manera más eficiente en un entorno de producción.
 
 - <a href="https://www.toptal.com/developers/javascript-minifier">Enlace a Javascript-minifier.com: </a>
+
+# Unidad 7
+Enfocado en la programación orientada a objetos.
+
+## Problemática de prototipos:
+Los prototipos en JavaScript pueden generar confusión y problemas debido a su forma de herencia y modificación de objetos. Pueden surgir dificultades al compartir propiedades y métodos entre objetos y al manejar el contexto de `this` en funciones. Se ha considerado una problemática debido a su complejidad y falta de estructura clara.
+
+## Clases:
+Las clases en JavaScript son una forma más estructurada y fácil de entender de definir objetos y sus comportamientos. Permiten crear objetos con propiedades y métodos definidos, y pueden ser utilizadas para crear múltiples instancias de objetos similares.
+
+## Sets:
+Un Set en JavaScript es una estructura de datos que permite almacenar valores únicos. Permite agregar y eliminar elementos, y ofrece métodos para realizar operaciones como la unión, intersección y diferencia entre conjuntos.
+
+## Gets:
+El get en JavaScript es una función especial que se utiliza para acceder a un valor o propiedad de un objeto. Permite definir acciones personalizadas que se ejecutan al obtener un valor específico de un objeto.
+
+## Métodos estáticos:
+Los métodos estáticos en JavaScript son funciones que se definen en una clase y pueden ser llamados directamente desde la clase misma, sin necesidad de instanciar un objeto. Estos métodos no están asociados a una instancia específica y se utilizan para realizar operaciones que no dependen de un estado de objeto.
+
+## Gets estáticos:
+Los gets estáticos en JavaScript son funciones especiales que se definen en una clase y permiten acceder a propiedades específicas sin necesidad de instanciar un objeto. Estos gets estáticos pueden ser útiles para obtener información o realizar cálculos basados en datos estáticos de la clase.
+
+## ESNext: Propiedades privadas (aún no soportado completamente):
+Las propiedades privadas en JavaScript, aún no soportadas completamente en todas las versiones del lenguaje, permiten definir propiedades que son accesibles solo desde dentro de la misma clase. Esto ayuda a encapsular datos y limitar su acceso para mantener la integridad y seguridad del código.
+
+## Singletons:
+Un Singleton en JavaScript es un patrón de diseño que asegura que una clase solo tenga una única instancia en todo el programa. Esto se logra mediante la creación de una instancia única y el uso de un mecanismo para acceder a ella en cualquier parte del código.
+
+## Múltiples constructores:
+En JavaScript, no se permite tener múltiples constructores para una clase como en otros lenguajes de programación. Sin embargo, se pueden utilizar técnicas como argumentos opcionales o valores predeterminados en el constructor para lograr funcionalidades similares. Esto permite crear objetos de la misma clase con diferentes configuraciones iniciales.
+
+# Orden recomendado de las propiedades en un objeto de JS
+Según las buenas prácticas de programación en JavaScript, el orden recomendado en un objeto sería el siguiente:
+
+1. Propiedades y métodos estáticos: Si el objeto tiene propiedades y métodos estáticos, se suelen colocar al inicio del objeto para resaltar su naturaleza estática.
+
+2. Propiedades de la clase: A continuación, se definen las propiedades de la clase. Estas son las propiedades que estarán disponibles en todas las instancias del objeto.
+
+3. Constructor: Después de las propiedades, se define el constructor del objeto. Aquí se inicializan las propiedades de la instancia específica del objeto.
+
+4. Sets y gets: A continuación, se definen los sets y gets para las propiedades que requieran acceso especial.
+
+5. Métodos: Después de los sets y gets, se definen los métodos del objeto. Estos son los comportamientos y funcionalidades asociadas al objeto.
+
+6. Propiedades privadas (ESNext): Si se utilizan propiedades privadas (aún no soportado completamente en todos los navegadores), se suelen colocar al final del objeto.
+
+Este orden ayuda a mantener una estructura clara y coherente en el objeto, facilitando la lectura y comprensión del código.
