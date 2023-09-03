@@ -1,5 +1,5 @@
-let personaje = {
-    nombre: 'Tony stark',
+const personaje = {
+    nombre: 'Tony Stark',
     codeName: 'Ironman',
     vivo: false,
     edad: 40,
@@ -7,45 +7,56 @@ let personaje = {
         lat: 34.034,
         lng: -118.70
     },
-    trajes: ['Mark 1', 'Mark V', 'Hulkbuster'],
+    trajes: ['Mark I', 'Mark V', 'Hulkbuster'],
     direccion: {
         zip: '10880, 90265',
         ubicacion: 'Malibu, California',
     },
-    'Ultima-pelicula': 'Infinity War', //no se aconseja nombrar variables de esta forma
+    'ultima-pelicula': 'Infinity War'
 };
 
-console.log(personaje);
-console.log('Nombre: ', personaje.nombre); 
-console.log('Edad: ', personaje.edad); 
-console.log('Coords: ', personaje.coords); 
-console.log('Lat: ', personaje.coords.lat); 
+console.log( personaje );
+console.log('Nombre', personaje.nombre );
+console.log('Nombre', personaje['nombre'] );
+console.log('Edad', personaje.edad );
 
-console.log('No. de trajes: ', personaje.trajes.length); //imprime la cantidad de elementos en el array
-console.log('No. de trajes: ', personaje.trajes[personaje.trajes.length - 1]); //imprimer el ultimo elemento del array, no improta que tan largo sea el array
+console.log('Coors', personaje.coords );
+console.log('Lat', personaje.coords.lat );
+
+console.log('No. Trajes', personaje.trajes.length );
+console.log('último traje', personaje.trajes[ personaje.trajes.length - 1 ] );
 
 const x = 'vivo';
-console.log('Vivo: ', personaje[x]);
-console.log('Ultima pelicula: ', personaje['Ultima-pelicula']);
+console.log('Vivo', personaje[x] );
 
-//Más detalles
+console.log('Última película', personaje['ultima-pelicula'] );
+
+// Más detalles
 
 delete personaje.edad;
-console.log(personaje);
+console.log( personaje );
 
-personaje.casado = true;
+personaje.casado =  true;
 
-const entriesPares = Object.entries(personaje);
-console.log(entriesPares);
 
-Object.freeze(personaje);
+const entriesPares = Object.entries( personaje );
+console.log( entriesPares );
 
-personaje.dinero = 100000000000;
+// personaje = true;
+
+Object.freeze( personaje );
+
+personaje.dinero = 10000000000;
 personaje.casado = false;
-
 personaje.direccion.ubicacion = 'Costa Rica';
-Object.freeze(personaje);
+console.log( personaje );
 
-const propiedades = Object.getOwnPropertyNames(personaje);
-const valores = Object.values(personaje);
-console.log({propiedades, valores});
+
+const propiedades = Object.getOwnPropertyNames( personaje );
+const valores     = Object.values( personaje );
+console.log({ propiedades, valores });
+
+
+
+
+
