@@ -3,7 +3,8 @@
         "latex",
         "plaintext",
         "html",
-        "markdown"
+        "markdown",
+        "javascript"
     ],
     "spellright.language": [
         "es"
